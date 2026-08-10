@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #050505;
+  color: #fef3c7;
+  overflow-x: hidden;
+}
+
+
+::selection {
+  background: #f59e0b;
+  color: black;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 20px;
+}
+
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(245,158,11,0.2);
+}
