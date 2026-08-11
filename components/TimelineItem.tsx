@@ -21,7 +21,7 @@ export default function TimelineItem({
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/40 to-transparent" />
       </div>
 
-      <div className="pointer-events-none absolute top-1/2 right-0 hidden h-[calc(100%+4rem)] w-24 translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-l-full opacity-60 sm:block sm:w-28 lg:w-32">
+      <div className="pointer-events-none absolute top-1/2 right-0 hidden h-[calc(100%+4rem)] w-24 translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-l-full opacity-60  sm:block sm:w-28 lg:w-32">
         <img
           src="/images/right-bg.jpg"
           alt=""
