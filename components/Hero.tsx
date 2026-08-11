@@ -5,16 +5,20 @@ import Particles from "@/components/Particles"
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+   
       <div className="absolute inset-0 overflow-hidden">
-        <iframe
-          className="absolute inset-0 h-full w-full scale-150 pointer-events-none"
-          src="https://www.youtube.com/embed/s2I97PlWorE?autoplay=1&mute=1&controls=false&loop=1&playlist=s2I97PlWorE"
-          allow="autoplay&controls=false&loop=true&mute=true"
-          title="Background video"
-        />
+        <video
+          className="absolute inset-0 h-full w-full object-cover pointer-events-none"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/videos/TheChingis.mp4" type="video/mp4" />
+        </video>
       </div>
 
-      <div className="absolute inset-0 -z-10 bg-black/60" />
+      <div className="absolute inset-0 z-0 bg-black/60" />
 
       <Particles />
 
@@ -43,3 +47,4 @@ export default function Hero() {
     </section>
   )
 }
+

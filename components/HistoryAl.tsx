@@ -35,9 +35,7 @@ export default function HistoryAI() {
 
           onChange={(e) => setQuestion(e.target.value)}
 
-          placeholder="
-Чингис хаан юу бүтээсэн бэ?
-"
+          placeholder="Чингис хаан юу бүтээсэн бэ?"
 
           className="mt-8 bg-black border-yellow-700 rounded p-4 w-full border"
         />
