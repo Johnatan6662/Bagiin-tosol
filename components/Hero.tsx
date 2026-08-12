@@ -5,10 +5,9 @@ import Particles from "@/components/Particles"
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-   
       <div className="absolute inset-0 overflow-hidden">
         <video
-          className="absolute inset-0 h-full w-full object-cover pointer-events-none"
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover"
           autoPlay
           muted
           loop
@@ -39,12 +38,16 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex justify-center gap-5">
-          <button className="rounded bg-amber-600 px-8 py-4 font-bold text-black transition hover:bg-amber-400">
+          <a
+            href="https://fliphtml5.com/pfaka/xemt/Mongoliin_nuuts_tovchoo/1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded bg-amber-600 px-8 py-4 font-bold text-black transition hover:bg-amber-400"
+          >
             Түүхийг суралцах
-          </button>
+          </a>
         </div>
       </div>
     </section>
   )
 }
-

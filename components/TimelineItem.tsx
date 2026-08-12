@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface TimelineItemProps {
   year: string
   title: string
@@ -11,34 +13,31 @@ export default function TimelineItem({
 }: TimelineItemProps) {
   return (
     <div className="relative overflow-visible px-0">
-      <div className="pointer-events-none absolute top-1/2 left-0 hidden h-[calc(100%+4rem)] w-24 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-r-full opacity-80 sm:block sm:w-28 lg:w-32">
-        <img
-          src="/images/left-bg.jpg"
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover"
-        />
+      <div className="pointer-events-none absolute top-1/2 left-0 hidden h-[calc(100%+4rem)] w-24 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-r-full sm:block sm:w-28 lg:w-32">
+        <Image src="/images/left-bg.jpg" alt="" fill className="object-cover" />
 
         <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40 to-transparent" />
       </div>
 
-      <div className="pointer-events-none absolute top-1/2 right-0 hidden h-[calc(100%+4rem)] w-24 translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-l-full opacity-80  sm:block sm:w-28 lg:w-32">
-        <img
+      <div className="pointer-events-none absolute top-1/2 right-0 hidden h-[calc(100%+4rem)] w-24 translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-l-full sm:block sm:w-28 lg:w-32">
+        <Image
           src="/images/right-bg.jpg"
           alt=""
-          className="absolute inset-0 h-full w-full object-cover"
+          fill
+          className="object-cover"
         />
 
         <div className="absolute inset-0 bg-linear-to-l from-black/90 via-black/40 to-transparent" />
       </div>
-  
-      <div className="relative z-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition hover:-translate-y-1 sm:p-10">
+
+      <div className="relative z-10 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-amber-300/20 hover:bg-white/10 sm:p-10">
         <div className="text-sm font-semibold tracking-[0.24em] text-amber-300 uppercase">
           {year}
         </div>
 
         <h3 className="mt-4 text-2xl font-bold text-white">{title}</h3>
 
-        <p className="mt-4 text-orange-100">{description}</p>
+        <p className="mt-4 leading-relaxed text-orange-100/90">{description}</p>
       </div>
     </div>
   )

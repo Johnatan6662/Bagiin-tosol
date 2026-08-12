@@ -7,6 +7,7 @@ import LegacySection from "@/components/LegacySection"
 import Footer from "@/components/Footer"
 import SoundButton from "@/components/SoundButton"
 
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-amber-100">

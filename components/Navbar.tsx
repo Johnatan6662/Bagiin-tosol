@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import MiniAi from "@/components/MiniAi"
 
 const links = [
   { name: "Үүсэл", href: "#origin" },
@@ -17,19 +18,23 @@ export default function Navbar() {
           href="/"
           className="text-2xl font-black tracking-widest text-amber-100"
         >
-          ЧИНГИС ХААН
+          ЧИНГИС XAAH
         </Link>
 
-        <div className="flex gap-8 text-sm tracking-wide">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-amber-100 transition hover:text-yellow-400"
-            >
-              {link.name}
-            </Link>
-          ))}
+        <div className="flex items-center gap-8">
+          <div className="hidden items-center gap-8 text-sm tracking-wide md:flex">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-amber-100 transition hover:text-yellow-400"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          <MiniAi />
         </div>
       </div>
     </nav>
