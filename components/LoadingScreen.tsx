@@ -30,7 +30,7 @@ export default function LoadingScreen() {
         opacity: 0,
       }}
 
-      className="inset-0 bg-black fixed z-[100] flex items-center justify-center"
+      className="inset-0 bg-black fixed `z-[100]` flex items-center justify-center"
     >
       <div className="text-center">
         <motion.h1

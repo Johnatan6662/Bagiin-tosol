@@ -5,6 +5,7 @@ import EmpireSection from "@/components/EmpireSection"
 import Rise from "@/components/Rise"
 import LegacySection from "@/components/LegacySection"
 import Footer from "@/components/Footer"
+import SoundButton from "@/components/SoundButton"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Rise />
       <EmpireSection />
       <LegacySection />
+      <SoundButton />
       <Footer />
     </main>
   )
