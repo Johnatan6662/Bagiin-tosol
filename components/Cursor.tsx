@@ -33,7 +33,7 @@ export default function Cursor() {
         top: pos.y,
       }}
 
-      className="w-6 h-6 bg-yellow-400 pointer-events-none fixed z-[999] rounded-full mix-blend-difference transition-transform duration-100"
+      className="w-6 h-6 bg-yellow-400 pointer-events-none fixed z-999 rounded-full mix-blend-difference transition-transform duration-100"
     />
   )
 }
