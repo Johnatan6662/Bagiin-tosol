@@ -13,7 +13,7 @@ interface Particle {
 export default function Particles() {
   const [items, setItems] = useState<Particle[]>([])
 
-  useEffect(() => {
+  const initializeParticles = async (setItemsValue: React.Dispatch<React.SetStateAction<Particle[]>>) => {
     const particles: Particle[] = Array.from({ length: 40 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
@@ -21,8 +21,12 @@ export default function Particles() {
       delay: Math.random() * 5,
     }))
 
-    setItems(particles)
-  }, [])
+    setItemsValue(particles)
+  }
+
+  useEffect(() => {
+    initializeParticles(setItems);
+  }, [items.length])
 
   return (
     <div className="inset-0 pointer-events-none absolute overflow-hidden">

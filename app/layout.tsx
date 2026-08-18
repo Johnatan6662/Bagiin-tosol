@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="mn">
+    <html lang="mn" suppressHydrationWarning>
       <body
         className={` ${titleFont.className} ${bodyFont.className} bg-black text-yellow-100`}
       >

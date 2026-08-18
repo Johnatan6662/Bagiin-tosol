@@ -12,7 +12,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-amber-700/20 bg-black/50 backdrop-blur-lg">
+    <nav className="fixed top-0 z-50 w-full border-b border-amber-700/20 bg-black/10 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
         <Link
           href="/"

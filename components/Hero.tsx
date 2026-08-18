@@ -5,16 +5,16 @@ import Particles from "@/components/Particles"
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 size-full overflow-hidden">
         <video
-          className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+          className="pointer-events-none absolute inset-0 size-[110%] object-cover"
           autoPlay
           muted
           loop
           playsInline
         >
-          {/* <source src="/videos/TheChingis.mp4" type="video/mp4" /> */}
-          <source src="https://20e70a0aff2ca8787638290d4ece7ba1.r2.cloudflarestorage.com/transfer-prod/EBPDWcTwiU/6a7ef97ff7837ad728f3468a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ba603a6ed1120422cd2e594a957b0c5a/20260814/auto/s3/aws4_request&X-Amz-Date=20260814T111936Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&response-content-disposition=inline;filename=%22TheChingis.mp4%22&X-Amz-Signature=c18284da9685df473af980b9f4b5ad61ce1d6d435b276b6612c8ab1228d39d80" type="video/mp4" />
+          <source src="/videos/TheChingis.mp4" type="video/mp4" />
+         
         </video>
       </div>
 

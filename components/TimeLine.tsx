@@ -4,7 +4,7 @@ import TimelineItem from "@/components/TimelineItem"
 
 export default function Timeline() {
   return (
-    <section id="origin" className="mx-auto max-w-7xl px-6 py-32">
+    <section id="origin" className="mx-auto overflow-x-hidden max-w-7xl px-6 py-32">
       <SectionHeader
         title="Үүсэл гарвал"
         subtitle="Тэмүжинээс дэлхийн их хаан хүртэлх замнал"
